@@ -18,6 +18,8 @@
     />
     <link rel="stylesheet" href="/assets/styles/main.css" />
     <title>AksoLab</title>
+    {% if jekyll.environment == 'production' %} {% include analytics.html %} {%
+    endif %}
   </head>
   <body>
     {% include header.html %}
