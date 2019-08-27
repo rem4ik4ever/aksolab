@@ -9,7 +9,12 @@ layout: default
         Have questions? No problem! We will be pleased to answer them.
       </div>
       <div class="container block">
-        <form name="question" action="/forms/question-submitted.html" netlify>
+        <form
+          name="question"
+          action="/forms/question-submitted.html"
+          netlify-honeypot="bot-field"
+          netlify
+        >
           <div class="block">
             <div class="field">
               <label for="client-name" class="label">Your name*</label>
@@ -40,6 +45,9 @@ layout: default
                 ></textarea>
               </div>
             </div>
+            <p style="display:none;">
+              <label>Don’t fill this out: <input name="bot-field"/></label>
+            </p>
           </div>
           <div class="level">
             <div class="level-right">
