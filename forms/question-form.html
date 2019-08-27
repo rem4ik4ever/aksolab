@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<div class="section">
+  <div class="columns is-centered">
+    <div class="column is-half">
+      <div class="container block">
+        Have questions? No problem! We will be pleased to answer them.
+      </div>
+      <div class="container block">
+        <form name="question" action="/forms/question-submitted.html" netlify>
+          <div class="block">
+            <div class="field">
+              <label for="client-name" class="label">Your name*</label>
+              <div class="control">
+                <input type="text" class="input" name="client-name" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="client-email" class="label">Contact email*</label>
+              <div class="control">
+                <input
+                  type="email"
+                  class="input"
+                  name="client-email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label for="client-description" class="label"
+                >Your question*</label
+              >
+              <div class="control">
+                <textarea
+                  name="description"
+                  class="textarea"
+                  required
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="level">
+            <div class="level-right">
+              <button class="button is-info is-rounded is-medium">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
